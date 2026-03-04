@@ -1,0 +1,14 @@
+.BookColumn {
+    overflow-y: auto;
+    max-height: 80vh;
+
+}
+
+.BookColumn::-webkit-scrollbar {
+    width: 6px;
+}
+
+.BookColumn::-webkit-scrollbar-thumb {
+    background-color: #a68b5b; /* L'oro del tuo logo */
+    border-radius: 10px;
+}

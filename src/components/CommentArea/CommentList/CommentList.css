@@ -1,0 +1,14 @@
+.carosello {
+    color: #5d4037; 
+    position: relative;
+    top: "0";
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(62%) sepia(34%) saturate(438%) hue-rotate(5deg) brightness(91%) contrast(87%);
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #a68b5b; 
+}

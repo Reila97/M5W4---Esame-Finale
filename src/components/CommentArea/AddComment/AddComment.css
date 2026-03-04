@@ -1,0 +1,14 @@
+.RateForm {
+    max-width: 80px;
+    cursor: pointer;
+}
+
+.RateBtn {
+    background-color: #1c4226;
+    border-color: #1c4226;
+}
+
+.RateBtn:hover {
+    background-color: #896234;
+    border-color: #896234;
+}

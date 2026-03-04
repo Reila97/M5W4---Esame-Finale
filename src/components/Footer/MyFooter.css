@@ -1,0 +1,14 @@
+.footer {
+    background-color: #FDFCF0 ;
+    color: #896234;
+}
+
+.LogoImg {
+    width: 200px;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.8em;
+    opacity: 0.7;
+}

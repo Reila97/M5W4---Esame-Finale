@@ -1,0 +1,40 @@
+import { useEffect, useState } from "react";
+import AddComment from "./AddComment/AddComment.jsx";
+import CommentList from "./CommentList/CommentList.jsx";
+import "./CommentArea.css"
+import { Container } from "react-bootstrap";
+
+function CommentArea({ asin }) {
+  const [comments, setComments] = useState([]);
+
+  const fetchComments = async () => {
+    try {
+      const response = await fetch(
+        `https://striveschool-api.herokuapp.com/api/books/${asin}/comments/`,
+        {
+          headers: {
+            Authorization:
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTkzNWRiYzk4OWY0ZTAwMTUyYjExMWYiLCJpYXQiOjE3NzE2MTM4ODUsImV4cCI6MTc3MjgyMzQ4NX0.G3Epy56KzwrPfEgYCJAfeKdhTaQSA11k3Ucg7d7_mtc",
+          },
+        },
+      );
+      const data = await response.json();
+      setComments(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => { fetchComments ()}, [asin]);
+
+  return (
+    <>
+       <Container className="commentArea">
+        <AddComment asin={asin} fetchComments={fetchComments} />
+      <CommentList comments={comments} />
+       </Container>
+    </>
+  );
+}
+
+export default CommentArea;
