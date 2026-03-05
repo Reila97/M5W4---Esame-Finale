@@ -25,8 +25,11 @@ function SingleBook({ book, selected, handleSelected }) {
 
           <Card.Text className="fw-bold text-muted">{book.price}€</Card.Text>
 
-          <Button variant="primary" onClick={() => navigate(`/${book.asin}`)}>
-            dettaglio
+          <Button 
+          variant="primary"
+          className="CardBtn" 
+          onClick={() => navigate(`/${book.asin}`)}>
+            Details
           </Button>
         </Card.Body>
       </Card>
