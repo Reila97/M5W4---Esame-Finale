@@ -1,11 +1,11 @@
 import "./SingleBook.css";
-import { useState } from "react";
 import { Card, Col, Button } from "react-bootstrap";
-import CommentArea from "../../CommentArea/CommentArea.jsx";
 import { useNavigate } from "react-router";
+import { useTheme } from "../../../context/ThemeContext";
 
 function SingleBook({ book, selected, handleSelected }) {
   const navigate = useNavigate();
+  const {theme} = useTheme
 
   return (
     <Col key={book.asin} sm={12} md={6} lg={4} className="mb-4">

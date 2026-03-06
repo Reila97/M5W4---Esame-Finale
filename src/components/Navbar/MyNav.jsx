@@ -10,7 +10,6 @@ import {
   Col,
 } from "react-bootstrap";
 
-import NavDropdown from "react-bootstrap/NavDropdown";
 
 function MyNav({ setFilteredBooks }) {
   const filter = (event) => {
@@ -23,7 +22,7 @@ function MyNav({ setFilteredBooks }) {
   };
 
   return (
-    <Navbar expand="lg" className="Mynav bg-body-tertiary rounded-4 m-3 ">
+    <Navbar expand="lg" className="Mynav bg-body-tertiary rounded-4 m-3">
       <Container fluid>
         <Navbar.Brand href="/" className="m-3">
           <span className="logo">

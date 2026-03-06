@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import AddComment from "./AddComment/AddComment.jsx";
 import CommentList from "./CommentList/CommentList.jsx";
 import "./CommentArea.css";
-import { Container, Spinner } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 function CommentArea({ asin }) {
   const [isLoading, setIsLoading] = useState(true);
