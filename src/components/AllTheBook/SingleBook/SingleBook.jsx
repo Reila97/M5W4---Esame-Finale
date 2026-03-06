@@ -9,7 +9,9 @@ function SingleBook({ book, selected, handleSelected }) {
 
   return (
     <Col key={book.asin} sm={12} md={6} lg={4} className="mb-4">
-      <Card className="BookCard h-100 m-1 bg-light bg-opacity-75">
+      <Card className="BookCard h-100 m-1 bg-light bg-opacity-75"
+      data-testid='bookCard'>
+        
         <Card.Img
           variant="top"
           src={book.img}

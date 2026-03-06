@@ -1,4 +1,4 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import "./App.css";
 import MyNav from "./components/Navbar/MyNav.jsx";
 import Welcome from "./components/Welcome/Welcome.jsx";
