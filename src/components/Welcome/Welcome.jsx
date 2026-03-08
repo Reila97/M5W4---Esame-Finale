@@ -29,6 +29,7 @@ function Welcome() {
               <hr />
               <div className="d-flex justify-content-end">
                 <Button
+                className="WelcomeBtn"
                   onClick={() => setShow(false)}
                   variant="outline-success"
                 >

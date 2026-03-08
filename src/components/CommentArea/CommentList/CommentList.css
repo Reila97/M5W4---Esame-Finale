@@ -4,6 +4,10 @@
     top: "0";
 }
 
+body.dark .carosello {
+    color: #e0e0e0;
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     filter: invert(62%) sepia(34%) saturate(438%) hue-rotate(5deg) brightness(91%) contrast(87%);
@@ -11,4 +15,8 @@
 
 .carousel-indicators [data-bs-target] {
     background-color: #a68b5b; 
+}
+
+body.dark .carousel-indicators [data-bs-target] {
+    background-color: #858585;
 }

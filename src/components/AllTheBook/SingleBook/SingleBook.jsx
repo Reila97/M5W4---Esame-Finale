@@ -25,10 +25,9 @@ function SingleBook({ book, selected, handleSelected }) {
         <Card.Body className="d-flex flex-column">
           <Card.Title className="CardTitle">{book.title}</Card.Title>
 
-          <Card.Text className="fw-bold text-muted">{book.price}€</Card.Text>
+          <Card.Text className="price fw-bold text-muted">{book.price}€</Card.Text>
 
           <Button 
-          variant="primary"
           className="CardBtn" 
           onClick={() => navigate(`/${book.asin}`)}>
             Details

@@ -4,6 +4,40 @@
     line-height: 1.6;
 }
 
+body.dark .welcomeAlert {
+    background-color: #1e1d1df1 !important;
+    color: #e0e0e0;
+}
+
+
 .green {
     color: #1c4226;
+}
+
+body.dark .green {
+    color: #858585;
+}
+
+.WelcomeBtn {
+    background-color: #ffffff00;
+    border-color: #1e4327;
+    color: #1c4226;
+    font-family: "Bodoni Moda SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body.dark .WelcomeBtn {
+    border-color: #333333 !important;
+    background-color: #ffffff00;
+    color: #858585;
+
+}
+
+body.dark .WelcomeBtn:hover {
+    border-color: #333333 !important;
+    background-color:  #858585;
+    color: #ffffff ;
+
 }

@@ -43,7 +43,7 @@ function CommentArea({ asin }) {
   }, [asin]);
 
   return (
-    <Container className="commentArea">
+    <Container className="commentArea my-3">
       {isLoading ? (
         <div className="d-flex justify-content-center">
           <div className="campfire-loader">

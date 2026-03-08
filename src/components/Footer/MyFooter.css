@@ -3,6 +3,11 @@
     color: #896234;
 }
 
+body.dark .footer {
+    background-color: #1e1d1df1 !important;
+    color: #e0e0e0;
+}
+
 .LogoImg {
     width: 200px;
 }
@@ -11,4 +16,8 @@
     margin-top: 20px;
     font-size: 0.8em;
     opacity: 0.7;
+}
+
+body.dark .copyright {
+    color: #858585;
 }

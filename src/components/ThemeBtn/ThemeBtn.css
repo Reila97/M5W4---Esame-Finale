@@ -1,0 +1,28 @@
+.ThemeBtn {
+    border-color: #333333 !important;
+    background-color: #000000df;
+    color: #858585;
+    font-family: "Bodoni Moda SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.ThemeBtn:hover {
+    border-color: #333333 !important;
+    background-color: #858585;
+    color: #ffffff;
+
+}
+
+body.dark .ThemeBtn {
+    background-color: #1c4226e3;
+    border-color: #1c4226;
+    color: #d6d6d6;
+}
+
+body.dark .ThemeBtn:hover {
+    background-color: #896234;
+    border-color: #896234;
+}

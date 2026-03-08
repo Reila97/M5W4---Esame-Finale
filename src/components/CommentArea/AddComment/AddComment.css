@@ -1,3 +1,13 @@
+.formBody {
+    background-color: #fdfcf000;
+    color: #896234;
+}
+
+body.dark .formBody {
+     background-color: #1e1d1df1 !important;
+    color: #e0e0e0;
+}
+
 .RateForm {
     max-width: 80px;
     cursor: pointer;
@@ -11,4 +21,18 @@
 .RateBtn:hover {
     background-color: #896234;
     border-color: #896234;
+}
+
+body.dark .RateBtn {
+    border-color: #333333 !important;
+    background-color: #ffffff00;
+    color: #858585;
+
+}
+
+body.dark .RateBtn:hover {
+    border-color: #333333 !important;
+    background-color:  #858585;
+    color: #ffffff ;
+
 }

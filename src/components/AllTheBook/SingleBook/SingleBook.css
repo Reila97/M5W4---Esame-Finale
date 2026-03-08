@@ -1,3 +1,12 @@
+body.dark .BookCard {
+    background-color: #1e1d1df1 !important;
+    color: #e0e0e0;
+}
+
+body.dark .price {
+    color: #858585 !important;
+}
+
 .CardTitle {
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -20,7 +29,22 @@
     border-color: #1c4226;
 }
 
+body.dark .CardBtn {
+    border-color: #333333 !important;
+    background-color: #ffffff00;
+    color: #858585;
+
+}
+
 .CardBtn:hover {
    background-color: #896234;
     border-color: #896234;
 }
+
+body.dark .CardBtn:hover {
+    border-color: #333333 !important;
+    background-color:  #858585;
+    color: #ffffff ;
+
+}
+

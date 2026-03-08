@@ -46,7 +46,7 @@ function AddComment({ asin, fetchComments }) {
 
   return (
     <>
-      <div className="add-comment-container mt-3 p-3 bg-light rounded-3 ">
+      <div className="formBody add-comment-container mt-3 p-3 bg-light rounded-3 ">
         <h6
           className="mb-3 fw-bold text-secondary"
           style={{ fontSize: "0.9rem" }}
@@ -57,8 +57,8 @@ function AddComment({ asin, fetchComments }) {
         <Form onSubmit={handleSubmit}>
           <Row className="g-2">
             <Col md={12}>
-              <Form.Group as={Col} md="12" controlId="comment">
-                <Form.Label className="small fw-bold"> Your Comment</Form.Label>
+              <Form.Group as={Col} md="12" className="formBody p-2" controlId="comment">
+                <Form.Label className=" small fw-bold"> Your Comment</Form.Label>
                 <Form.Control
                   required
                   as="textarea"
@@ -67,6 +67,7 @@ function AddComment({ asin, fetchComments }) {
                   value={formData.comment}
                   onChange={handleChange}
                   placeholder="Write your comment..."
+                  className=" my-3"
                 />
               </Form.Group>
             </Col>

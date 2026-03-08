@@ -1,9 +1,14 @@
 .commentArea {
-    background-color: #F8F9FA;
+  background-color: #fdfcf09e;
+}
+
+body.dark .commentArea {
+  background-color: #1e1d1d43 !important;
 }
 
 
-/* From Uiverse.io by philipo30 */ 
+
+/* From Uiverse.io by philipo30 */
 .campfire-loader {
   position: relative;
   width: 6em;
@@ -94,11 +99,9 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: radial-gradient(
-    circle,
-    rgba(255, 215, 0, 0.2) 0%,
-    transparent 60%
-  );
+  background: radial-gradient(circle,
+      rgba(255, 215, 0, 0.2) 0%,
+      transparent 60%);
   animation: glow 1.5s ease-in-out infinite;
 }
 
@@ -107,6 +110,7 @@
     transform: scaleY(1) skew(2deg);
     opacity: 0.9;
   }
+
   100% {
     transform: scaleY(1.2) skew(-3deg);
     opacity: 1;
@@ -118,6 +122,7 @@
     transform: translateY(0) scale(1);
     opacity: 1;
   }
+
   100% {
     transform: translateY(-3em) translateX(calc(var(--delay) * 1em)) scale(0.2);
     opacity: 0;
@@ -125,10 +130,12 @@
 }
 
 @keyframes glow {
+
   0%,
   100% {
     opacity: 0.3;
   }
+
   50% {
     opacity: 0.6;
   }

@@ -5,8 +5,13 @@
 }
 
 .Mynav {
-    background-color: #FDFCF0 !important;
+    background-color: #fdfcf0e3 !important;
 }
+
+body.dark .Mynav {
+    background-color: #1e1d1df1 !important;
+}
+
 
 .logo {
     font-family: "Bodoni Moda SC", serif;
@@ -17,6 +22,21 @@
     font-size: 40px;
 }
 
+body.dark .logo {
+    color: #e0e0e0;
+
+}
+
+.green {
+    color: #1c4226;
+}
+
+body.dark .green {
+    color: #858585;
+}
+
+
+
 .nav-link {
     font-family: "Bodoni Moda SC", serif;
     font-optical-sizing: auto;
@@ -25,6 +45,11 @@
     color: #896234;
     font-size: 20px;
 }
+
+body.dark .nav-link{
+    color: #e0e0e0;
+}
+
 
 .navBtn {
     background-color: #ffffff00;
@@ -36,7 +61,16 @@
     font-style: normal;
 }
 
-.green {
-    color: #1c4226;
+body.dark .navBtn {
+    border-color: #333333 !important;
+    background-color: #ffffff00;
+    color: #858585;
+
 }
 
+body.dark .navBtn:hover {
+    border-color: #333333 !important;
+    background-color:  #858585;
+    color: #ffffff ;
+
+}

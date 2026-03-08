@@ -21,7 +21,7 @@ function BookDetail() {
     <>
       {book && (
         <Container>
-          <Card >
+          <Card className="DetailCard">
             <Row>
               <Col sm={6}> 
               <Card.Img 
@@ -33,7 +33,7 @@ function BookDetail() {
              <Col sm={6}>  
                <Card.Body>
                 <Card.Title>{book.title}</Card.Title>
-                <Card.Text>{book.price}€</Card.Text>
+                <Card.Text className="price">{book.price}€</Card.Text>
               </Card.Body>
               </Col>
 

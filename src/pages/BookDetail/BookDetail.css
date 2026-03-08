@@ -1,0 +1,8 @@
+.DetailCard {
+    background-color: #fdfcf09e;
+}
+
+body.dark .DetailCard {
+    background-color: #1e1d1df1 !important;
+    color: #e0e0e0;
+}

@@ -5,22 +5,21 @@ import AllTheBook from "./components/AllTheBook/AllTheBook.jsx";
 import BookDetail from "./pages/BookDetail/BookDetail.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import MyFooter from "./components/Footer/MyFooter.jsx";
-import ThemeBtn from "./components/ThemeBtn/ThemeBtn.jsx"
+import ThemeBtn from "./components/ThemeBtn/ThemeBtn.jsx";
 import books from "./data/fantasy.json";
-import { ThemeProvider } from "./context/ThemeContext.jsx";
+import { ThemeProvider, useTheme } from "./context/ThemeContext.jsx";
 import { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router";
 
 function App() {
   const [filteredBooks, setFilteredBooks] = useState(books);
+  
 
   return (
     <>
       <ThemeProvider>
-
-
         <MyNav setFilteredBooks={setFilteredBooks} />
-        <ThemeBtn/>
+        <ThemeBtn />
 
         <BrowserRouter>
           <Routes>
@@ -41,8 +40,6 @@ function App() {
         </BrowserRouter>
 
         <MyFooter />
-
-
       </ThemeProvider>
     </>
   );
